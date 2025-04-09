@@ -60,9 +60,8 @@ Browser-like headers are used to avoid being blocked by websites
 
 ## Development
 Prerequisites
-Python 3.9+
-
-pip
+- Python 3.9+
+- pip
 
 Setup
 Clone the repository:
