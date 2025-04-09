@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+schedule
+python-dotenv
+pytz
+urllib3
