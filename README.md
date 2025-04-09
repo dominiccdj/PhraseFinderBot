@@ -17,7 +17,7 @@ docker run -d --name phrase-finder-bot \
   -e RECIPIENT_TOKEN="your-telegram-token" \
   -e MIN_OCCURRENCES="1" \
   -e CHECK_INTERVAL="60" \
-  ghcr.io/yourusername/phrasefinderbot:latest
+  dominiccdj/phrasefinderbot:v1
 ```
 ### Using Docker Compose
 Create a docker-compose.yml file:
@@ -26,7 +26,7 @@ version: '3.8'
 
 services:
   phrase-finder:
-    image: dominiccdj/phrasefinderbot:latest
+    image: dominiccdj/phrasefinderbot:v1
     container_name: phrase-finder-bot
     restart: unless-stopped
     environment:
