@@ -26,7 +26,7 @@ version: '3.8'
 
 services:
   phrase-finder:
-    image: ghcr.io/yourusername/phrasefinderbot:latest
+    image: dominiccdj/phrasefinderbot:latest
     container_name: phrase-finder-bot
     restart: unless-stopped
     environment:
@@ -66,7 +66,7 @@ Prerequisites
 Setup
 Clone the repository:
 ```
-git clone https://github.com/yourusername/phrasefinderbot.git
+git clone https://github.com/dominiccdj/phrasefinderbot.git
 cd phrasefinderbot
 ```
 Install dependencies:
