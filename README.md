@@ -78,7 +78,7 @@ Create a .env file with your configuration
 
 Run the application:
 ```
-python app.py
+python main.py
 ```
 ## License
 MIT
