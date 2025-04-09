@@ -1,10 +1,10 @@
 # PhraseFinderBot
-PhraseFinderBot is an automated web monitoring tool that scans specified websites for phrases and sends notifications when they're found.
+PhraseFinderBot is an automated web monitoring tool that scans specified websites for phrases and sends Telegram(Telepush) notifications when they're found.
 
 ## Features
 - Configurable Monitoring: Set any URL and search phrase via environment variables
 - Smart Detection: Count occurrences of phrases and set minimum thresholds
-- Instant Notifications: Get alerts via Telegram when phrases are detected
+- Instant Notifications: Get alerts via Telegram(Telepush) when phrases are detected
 - Anti-Detection Measures: Mimics real browser behavior to avoid being blocked
 - Docker Ready: Easy deployment with included Dockerfile and docker-compose.yml
 
@@ -45,7 +45,7 @@ docker-compose up -d
 | ------------------- | ----------- | ------- |
 |URL |	Website URL to monitor |	None |
 |SEARCH_PHRASE |	Phrase to search for |	None |
-|RECIPIENT_TOKEN |	Telegram token for notifications |	None |
+|RECIPIENT_TOKEN |	Telegram(Telepush) token for notifications |	None |
 |MIN_OCCURRENCES |	Minimum occurrences required |	1 |
 |CHECK_INTERVAL |	Minutes between checks |	60 |
 
