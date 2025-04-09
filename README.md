@@ -1,5 +1,5 @@
 # PhraseFinderBot
-PhraseFinderBot is an automated web monitoring tool that scans specified websites for phrases and sends Telegram(Telepush) notifications when they're found.
+PhraseFinderBot is an automated web monitoring tool that scans specified websites for phrases and sends Telegram(Telepush https://telepush.dev/) notifications when they're found.
 
 ## Features
 - Configurable Monitoring: Set any URL and search phrase via environment variables
@@ -14,7 +14,7 @@ PhraseFinderBot is an automated web monitoring tool that scans specified website
 docker run -d --name phrase-finder-bot \
   -e URL="https://example.com/jobs" \
   -e SEARCH_PHRASE="Software Engineer" \
-  -e RECIPIENT_TOKEN="your-telegram-token" \
+  -e RECIPIENT_TOKEN="your-telepush-token" \
   -e MIN_OCCURRENCES="1" \
   -e CHECK_INTERVAL="60" \
   dominiccdj/phrasefinderbot:v1
@@ -62,6 +62,7 @@ Browser-like headers are used to avoid being blocked by websites
 Prerequisites
 - Python 3.9+
 - pip
+- Telepush token https://telepush.dev/ 
 
 Setup
 Clone the repository:
